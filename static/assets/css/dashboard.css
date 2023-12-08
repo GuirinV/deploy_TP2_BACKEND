@@ -1,0 +1,63 @@
+body{
+    height: 100svh;
+}
+
+header{
+    height: 25svh;
+}
+
+main{
+    height: 60svh;
+    overflow-y: scroll;
+}
+
+footer{
+    height: 15svh;
+}
+
+#botonPacientes{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    padding: 8px;
+    background-color: var(--rojo);
+    border-color: var(--rojo);
+    border-radius: 15px;
+    height: 5vh;
+    color: black; 
+}
+
+#datos {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 25px;
+}
+
+#datos table{
+    width: 80svw;
+    background-color: #ebebeb;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 6px 10px;
+    border-bottom: solid 1px black;
+}
+
+tr{
+    border: solid 1px black;
+}
+
+tr:nth-child(even){
+    background-color: #FAFAFA;
+}
+
+thead{
+    background-color: var(--celeste);
+}

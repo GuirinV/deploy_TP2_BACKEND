@@ -1,0 +1,108 @@
+header nav{
+  /*background-color: var(--blanco);*/
+  height: 20vh;
+  text-align: right;
+  /*padding-right:2vh*/
+  background-color: white;
+  background-image: url("../media/imagenes/Logo.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 10px;
+}
+
+header nav a{
+  text-decoration:none;
+  color: inherit;
+  font-size: 18px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  right: 20px;
+  padding: 8px;
+  background-color: var(--azul-oscuro);
+  height: 5vh;
+  color: white; 
+}
+
+
+header nav a:hover{
+  background-color: var(--celeste);
+  color: white;
+}
+
+header nav a.activo{
+background-color: var(--celeste);
+}
+
+h1 {
+width: 100%;
+background-color: var(--azul-oscuro);
+height: fit-content;
+min-height: 5vh;
+font-weight: bold;
+color: white;
+font-size: 18px;
+padding: 8px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+
+}
+
+.dashboard_h1{
+  padding-left: 12px;
+}
+
+
+/*Media query móvil*/
+@media screen and (max-width:700px) {
+  *{
+    font-size: 10px;
+  }
+
+  header nav{
+    width: 100%;
+    background-color: white;
+    background-size: 18vh;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: flex-start;
+}
+  header nav a{
+    font-size: 12px;
+    height: 3vh;
+    width: 40%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 0.7%;
+    position: relative;
+    top: 10px;
+    right: 20px;
+  }
+
+  header h1{
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/*Media query tablet*/
+@media screen and (min-width:700px) and (max-width:1000px){
+  header h1{
+    font-size: 20px;
+  }
+}
+
