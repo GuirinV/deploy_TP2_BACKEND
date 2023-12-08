@@ -3,7 +3,7 @@ from django.db.models import Model
 
 # Create your models here.
 
-class Pacientes(Model):
+class Paciente(Model):
     """
     Atributos de clase que son usadas por herencia de la clase Model
 
@@ -24,7 +24,7 @@ class Pacientes(Model):
 
 
     def __str__(self):
-        return f"El Paciente: {self.nombre}, edad {self.edad}"
+        return f"El Paciente: {self.nombre_appellido}, edad {self.edad}"
 
     def get_fields(self):
         return [

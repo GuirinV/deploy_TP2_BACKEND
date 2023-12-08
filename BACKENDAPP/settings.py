@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+CUSTOM_APP = [
+    "app_consultorio"
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -38,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+INSTALLED_APPS += CUSTOM_APP
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
