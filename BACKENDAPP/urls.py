@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view(), name="index"),
     path('pacientes', PacientesPage.as_view(), name="pacientes"),
+    path("paciente/", include("paciente_app.urls")),
 ]

@@ -24,7 +24,7 @@ class Paciente(Model):
 
 
     def __str__(self):
-        return f"El Paciente: {self.nombre_appellido}, edad {self.edad}"
+        return f"El Paciente: {self.}, edad {self.edad}"
 
     def get_fields(self):
         return [
