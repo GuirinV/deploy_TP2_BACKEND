@@ -1,0 +1,19 @@
+{% extends 'base_template.html' %} 
+{% block contenido %}
+
+<main>
+  <div>
+    <h1>{{paciente.nombre_appellido}}</h1>
+    {% for label, value in paciente.get_fields %}
+    <div>
+      <span>{{label | upper}}</span>
+      <span> <b> {{value}} </b></span>
+    </div>
+
+    {% endfor %}
+
+    <a href="{% url 'paciente:all' %}">Ir al inicio</a>
+  </div>
+</main>
+
+{% endblock%}

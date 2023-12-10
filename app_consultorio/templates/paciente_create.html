@@ -1,0 +1,18 @@
+{% extends 'base_template.html' %}
+{% block contenido %}
+
+<main>
+    <div class="main-color-pacientes">
+        <h1>CREAR PACIENTE</h1>
+        <form method="post">
+
+            {% csrf_token %}
+            <div>{{form.as_p}}</div>
+            <input type="submit" value="{{ tipo }}" />
+
+        </form>
+
+        <a href="{% url 'paciente:all' %}">Volvamos al Inicio</a>
+    </div>
+</main>
+{% endblock %}
