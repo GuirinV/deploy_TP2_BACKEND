@@ -33,6 +33,10 @@ CUSTOM_APP = [
     "app_consultorio"
 ]
 
+EXTERNALS = [
+    "rest_framework"
+]
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -42,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-INSTALLED_APPS += CUSTOM_APP
+INSTALLED_APPS += CUSTOM_APP + EXTERNALS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -22,3 +22,7 @@ urlpatterns = [
 ]
 
 # -> a la urls.py del proyecto
+
+# router
+from .router import router
+urlpatterns += router.urls
