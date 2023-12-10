@@ -17,7 +17,7 @@ urlpatterns = [
     path("create/", PacienteCreateView.as_view(), name="create"),
     path("<int:pk>/detail/", PacienteDetailView.as_view(), name="detail"),
     path("<int:pk>/update/", PacienteUpdateView.as_view(), name="update"),
-    path("<int:pk>/delete/", PacienteDeleteView.as_view(), name="delete")
+    path("<int:pk>/delete/", PacienteDeleteView.as_view(), name="delete"),
 
 ]
 
