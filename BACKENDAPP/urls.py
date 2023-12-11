@@ -18,11 +18,13 @@ from django.contrib import admin
 from django.urls import path, include
 
 from .views import IndexPage
-from .views import PacientesPage
+from .views import PacientesPage,ContactoPage,Quienes_somosPage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', IndexPage.as_view(), name="index"),
     path('pacientes', PacientesPage.as_view(), name="pacientes"),
     path("paciente/", include("app_consultorio.urls")),
+    path('contacto', ContactoPage.as_view(), name="contacto"),
+    path('quienes_somos', Quienes_somosPage.as_view(), name="quienes_somos"),
 ]

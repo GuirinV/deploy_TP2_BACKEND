@@ -5,3 +5,9 @@ class IndexPage(TemplateView):
 
 class PacientesPage(TemplateView):
     template_name = "pacientes.html"
+
+class ContactoPage(TemplateView):
+    template_name = "contacto.html"
+
+class Quienes_somosPage(TemplateView):
+    template_name = "quienes_somos.html"
