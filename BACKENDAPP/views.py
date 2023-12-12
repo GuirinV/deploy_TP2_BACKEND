@@ -11,3 +11,11 @@ class ContactoPage(TemplateView):
 
 class Quienes_somosPage(TemplateView):
     template_name = "quienes_somos.html"
+
+class PerdisteContraseñaPage(TemplateView):
+    template_name = "perdisteContraseña.html"
+
+class RegistrarsePage(TemplateView):
+    template_name = "registrarse.html"
+
+    

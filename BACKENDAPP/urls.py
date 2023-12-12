@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from .views import IndexPage
-from .views import PacientesPage,ContactoPage,Quienes_somosPage
+from .views import PacientesPage,ContactoPage,Quienes_somosPage,PerdisteContraseñaPage,RegistrarsePage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +27,8 @@ urlpatterns = [
     path("paciente/", include("app_consultorio.urls")),
     path('contacto', ContactoPage.as_view(), name="contacto"),
     path('quienes_somos', Quienes_somosPage.as_view(), name="quienes_somos"),
+
+    path('perdisteContraseña', PerdisteContraseñaPage.as_view(), name="perdisteContraseña"),
+    path('registrarse', RegistrarsePage.as_view(), name="registrarse"),
+
 ]
