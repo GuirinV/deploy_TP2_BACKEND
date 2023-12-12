@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quienes somos</title>
-    <link rel="stylesheet" href= "{% static '../css/quienessomos.css'%}" />
-    <link rel="stylesheet" href="{% static './css/style.css'%}" />
-    <link rel="stylesheet" href="{% static './css/header.css'%}" />
-    <link rel="stylesheet" href="{% static './css/footer.css'%}" />
-     <!-- Iconos de redes -->
-     <script src="https://kit.fontawesome.com/e30e97780d.js" crossorigin="anonymous"></script>
+{% extends 'base_template.html' %}
+{% load static %}
+{% block contenido %}
 
-     <!-- FAVICON -->
-    <link rel="icon" href="../assets/media/iconos/faviconfondo.ico">
-
-    </head>
-    <body>
-    <header>
-        <nav>
-            <a href="../index.html">Principal</a>
-            <a href="./pacientes.html">Autogestión</a>
-            <a href="./contacto.html">Contacto</a>
-            <a class="activo" href="./quienes_somos.html">Quienes Somos</a>
-          </nav>
-          <h1></h1>
-    </header>
     <main class="quienes_container">
             <section class="quienes">
               <img src="{% static '../media/imagenes/img_cara.jpg' %}" alt="">
@@ -50,3 +27,5 @@
     </footer>
     </body>
 </html>
+
+{% endblock %}
