@@ -8,13 +8,12 @@
       <section class="contacto">
         
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-        <br>
-        <button type="submit">Crear un paciente</button>
+                <button>Crear un paciente</button>
         <br>
         <div class="list">
           {% for paciente in paciente_list %}
         
-            <legend>Nombre: {{paciente.nombre_apellido}}</legend>
+            <legend>Nombre: {{paciente.nombre_appellido}}</legend>
             <ul>
               <li>Direccion : {{paciente.direccion}}</li>
               <li>Mail: {{paciente.mail}}</li>
