@@ -23,17 +23,15 @@
               <li>Peso: {{paciente.peso}}</li>
               <li>Alta_paciente : {{paciente.alta_paciente}}</li>
             </ul>
-    
+            <br>
               <div>
                   <label for="">Detalles: </label>
                   <a href="{% url 'paciente:detail' paciente.id  %}">🟢</a>
               </div>
-              <br>
               <div>
                   <label for="">Borrar: </label>
                   <a href="{% url 'paciente:delete' paciente.id %}">❌</a>
               </div>
-              <br>
               <div>
                   <label for="">Editar: </label>
                   <a href="{% url 'paciente:update' paciente.id %}">📋</a>
