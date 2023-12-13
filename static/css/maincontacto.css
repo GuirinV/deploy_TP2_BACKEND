@@ -24,8 +24,7 @@ main{
 
 .list {
     height: 100px;
-    width: 100%;
-
+    width: 200%;
     gap: rem;
 
     /*background-color: var(--blanco);
