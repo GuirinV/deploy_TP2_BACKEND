@@ -22,23 +22,24 @@ main{
     align-items: center;
 }
 
-/* .list {
-    height: 100px;
-    width: 400%;
-    gap: rem;
+.list {
+    display: grid;
+    width: 100%;
+    gap: 2rem;
 
-    background-color: var(--blanco);
+    grid-auto-rows: 8rem;
+    grid-template-columns: repeat(auto-fill, minmax(8rem,1fr));
+  
+
+    /* background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-items: center;
-    display: grid;
-    display: flex;
-
-    grid-auto-rows: 6rem;
-    grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));
-  } */
+    height: 100px;
+    display: flex; */
+  }
 
 .contacto {
     width: 90%;
