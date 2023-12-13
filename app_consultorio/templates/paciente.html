@@ -2,9 +2,9 @@
 {% load static %}
 {% block contenido %}
 
-<main>
+<!-- <main>
     <div>
- 
+      <br><br>
       <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
       <div class="list" style="width: 100px">
         {% for paciente in paciente_list %}
@@ -36,5 +36,47 @@
       </div>
   
     </div>
-  </main>
+  </main> -->
+
+
+
+  <body>
+    
+    <main class="contenedor_main">
+      <section class="contacto">
+        
+        <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
+       
+        {% for paciente in paciente_list %}
+        <fieldset>
+          <legend>Nombre: {{paciente.nombre_appellido}}</legend>
+          <ul>
+            <li>Direccion : {{paciente.direccion}}</li>
+            <li>Mail: {{paciente.mail}}</li>
+            <li>Edad : {{paciente.edad}}</li>
+            <li>Telefono : {{paciente.telefono}}</li>
+            <li>Peso: {{paciente.peso}}</li>
+            <li>Alta_paciente : {{paciente.alta_paciente}}</li>
+          </ul>
+  
+            <div>
+                <label for="">Detalles: </label>
+                <a href="{% url 'paciente:detail' paciente.id  %}">🟢</a>
+            </div>
+            <div>
+                <label for="">Borrar: </label>
+                <a href="{% url 'paciente:delete' paciente.id %}">❌</a>
+            </div>
+            <div>
+                <label for="">Editar: </label>
+                <a href="{% url 'paciente:update' paciente.id %}">📋</a>
+            </div>
+        </fieldset>
+        {% endfor %}
+      </section>
+    </main>
+    {% include 'footer_template.html' %}
+  </body>
+</html>
+
 {% endblock %}
