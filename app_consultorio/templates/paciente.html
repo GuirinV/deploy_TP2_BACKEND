@@ -6,7 +6,7 @@
     <div>
       <br><br>
       <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-      <div class="list" style="width: 100px">
+      <div class="list">
         {% for paciente in paciente_list %}
         <fieldset>
           <legend>Nombre: {{paciente.nombre_appellido}}</legend>
@@ -44,12 +44,12 @@
     
     <main class="contenedor_main">
       <section class="contacto">
-        
+        <h1>Bienvenido a su consultorio virtual</h1>
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-       
+        <div class="list"></div>
         {% for paciente in paciente_list %}
         <fieldset>
-          <legend>Nombre: {{paciente.nombre_appellido}}</legend>
+          <legend>Nombre: {{paciente.nombre_apellido}}</legend>
           <ul>
             <li>Direccion : {{paciente.direccion}}</li>
             <li>Mail: {{paciente.mail}}</li>
@@ -73,6 +73,7 @@
             </div>
         </fieldset>
         {% endfor %}
+      </div>
       </section>
     </main>
     {% include 'footer_template.html' %}
