@@ -6,7 +6,7 @@
     
     <main class="contenedor_main">
       <section class="contacto">
-        <h1>Bienvenido a su consultorio virtual</h1>
+        
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
         <br>
         <button type="submit">Crear un paciente</button>
@@ -28,14 +28,17 @@
                   <label for="">Detalles: </label>
                   <a href="{% url 'paciente:detail' paciente.id  %}">🟢</a>
               </div>
+              <br>
               <div>
                   <label for="">Borrar: </label>
                   <a href="{% url 'paciente:delete' paciente.id %}">❌</a>
               </div>
+              <br>
               <div>
                   <label for="">Editar: </label>
                   <a href="{% url 'paciente:update' paciente.id %}">📋</a>
               </div>
+              <br>
           
           {% endfor %}
         </div>
