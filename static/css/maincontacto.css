@@ -23,9 +23,10 @@ main{
 }
 
 .list {
-    height: 50px;
+    height: 100px;
     width: 100%;
-    display: flex;
+
+    gap: rem;
 
     /*background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
@@ -34,7 +35,7 @@ main{
     justify-content: center;
     align-items: center;
     display: grid;
-    gap: rem;
+    display: flex;
 
     grid-auto-rows: 6rem;
     grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));*/
