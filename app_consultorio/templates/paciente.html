@@ -9,6 +9,8 @@
         <h1>Bienvenido a su consultorio virtual</h1>
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
         <br>
+        <button type="submit">Crear un paciente</button>
+        <br>
         <div class="list">
           {% for paciente in paciente_list %}
         
