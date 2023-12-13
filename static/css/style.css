@@ -554,14 +554,16 @@ main div h1{
   /* ajustar a pantallas con ancho menor o igual a 775px; */
 
   .list {
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    height: 200px;
+    width: 100%;
+    display: grid;
+    gap: rem;
+    grid-auto-rows: 6rem;
+    grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));
     /*background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
-    
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
     align-items: center;*/
   }
