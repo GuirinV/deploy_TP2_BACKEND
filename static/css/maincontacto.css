@@ -23,8 +23,9 @@ main{
 }
 
 .list {
-    height: 100px;
+    height: 500px;
     width: 100%;
+    display: flex;
     gap: rem;
     /*background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
