@@ -4,9 +4,9 @@
 
 <main>
     <div>
-      <h2>Pacientes</h2>
+ 
       <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-      <div class="list">
+      <div class="list" style="width: 100px">
         {% for paciente in paciente_list %}
         <fieldset>
           <legend>Nombre: {{paciente.nombre_appellido}}</legend>
