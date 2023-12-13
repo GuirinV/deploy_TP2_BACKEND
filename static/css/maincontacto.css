@@ -25,6 +25,7 @@ main{
 .list {
     height: 80vh;
     overflow-y: scroll;
+    border: 0vmax;
 
     /* background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;

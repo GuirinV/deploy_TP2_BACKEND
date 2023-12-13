@@ -8,7 +8,7 @@
       <section class="contacto">
         
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-                <button>Crear un paciente</button>
+
         <br>
         <div class="list">
           {% for paciente in paciente_list %}
@@ -36,7 +36,7 @@
                   <a href="{% url 'paciente:update' paciente.id %}">📋</a>
               </div>
               <br>
-          
+              <br>
           {% endfor %}
         </div>
       </section>
