@@ -23,17 +23,18 @@ main{
 }
 
 .list {
-    height: 500px;
+    height: 50px;
     width: 100%;
     display: flex;
-    gap: rem;
+
     /*background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-items: center;
-        display: grid;
+    display: grid;
+    gap: rem;
 
     grid-auto-rows: 6rem;
     grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));*/
