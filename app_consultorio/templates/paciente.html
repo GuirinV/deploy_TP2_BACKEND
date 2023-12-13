@@ -8,10 +8,10 @@
       <section class="contacto">
         <h1>Bienvenido a su consultorio virtual</h1>
         <h2><a href="{% url 'paciente:create' %}">Crear un paciente</a></h2>
-        {% for paciente in paciente_list %}
+       
         <div class="list">
-
-          <fieldset>
+          {% for paciente in paciente_list %}
+        
             <legend>Nombre: {{paciente.nombre_apellido}}</legend>
             <ul>
               <li>Direccion : {{paciente.direccion}}</li>
@@ -34,7 +34,7 @@
                   <label for="">Editar: </label>
                   <a href="{% url 'paciente:update' paciente.id %}">📋</a>
               </div>
-          </fieldset>
+          
           {% endfor %}
         </div>
       </section>

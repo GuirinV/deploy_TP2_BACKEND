@@ -553,10 +553,12 @@ main div h1{
   /* ajustar a pantallas con ancho menor o igual a 775px; */
   /* ajustar a pantallas con ancho menor o igual a 775px; */
 
-  .list{
-    height: 30vh;
-    width: 100%;
+  .list {
+    height: 500px;
+    width: 500px;
     display: flex;
+    flex-direction: row;
+    align-items: center;
     /*background-color: var(--blanco);
     box-shadow: inset 0vh 1vh #bbbbbb0c;
     
