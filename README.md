@@ -1,3 +1,8 @@
+#INTEGRANTES DEL PROYECTO
+-Verónica Guirin
+-Mateo Saavedra
+-Angelina Zarantonello
+
 README - Pasos del Trabajo_2
 Este README proporciona una guía detallada de los pasos necesarios para la creación de una API y su posterior implementación (deploy) en PythonAnywhere. El proceso abarca desde la configuración del entorno de desarrollo hasta la puesta en funcionamiento de la aplicación web.
 
