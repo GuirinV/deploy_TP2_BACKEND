@@ -1,12 +1,12 @@
-# INTEGRANTES DEL PROYECTO
+### INTEGRANTES DEL PROYECTO
 -Verónica Guirin
 -Mateo Saavedra
 -Angelina Zarantonello
 
-# LINK A LA PRESENTACIÓN DEL PROYECTO
+### LINK A LA PRESENTACIÓN DEL PROYECTO
 https://1drv.ms/v/s!AvBvlmf7wmfUqBVXl9aaw1ckdcWw
 
-README - Pasos del Trabajo_2
+### README - Pasos del Trabajo_2
 Este README proporciona una guía detallada de los pasos necesarios para la creación de una API y su posterior implementación (deploy) en PythonAnywhere. El proceso abarca desde la configuración del entorno de desarrollo hasta la puesta en funcionamiento de la aplicación web.
 
 1. Creación de API
