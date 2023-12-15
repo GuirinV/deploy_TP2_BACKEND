@@ -1,7 +1,7 @@
 ### INTEGRANTES DEL PROYECTO
--Verónica Guirin
--Mateo Saavedra
--Angelina Zarantonello
+- Verónica Guirin
+- Mateo Saavedra
+- Angelina Zarantonello
 
 ### LINK A LA PRESENTACIÓN DEL PROYECTO
 https://1drv.ms/v/s!AvBvlmf7wmfUqBVXl9aaw1ckdcWw
